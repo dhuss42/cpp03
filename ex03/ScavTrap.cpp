@@ -3,6 +3,10 @@
 
 //---------canonicals------------//
 
+ScavTrap::ScavTrap()
+{
+}
+
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
     std::cout << "ScavTrap: " << name << " created!" << std::endl;

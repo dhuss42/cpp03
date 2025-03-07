@@ -3,6 +3,10 @@
 
 //---------canonicals------------//
 
+DiamondTrap::DiamondTrap()
+{
+}
+
 // inside the constructor specifying which variables are inherited from which class
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name), name(name)
 {

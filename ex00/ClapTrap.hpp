@@ -12,6 +12,7 @@ class ClapTrap
         int         nrg_points;
         int         attack_dmg;
     public:
+        ClapTrap();
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap& src);
         ClapTrap& operator=(const ClapTrap& other);

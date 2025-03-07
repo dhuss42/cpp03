@@ -2,6 +2,10 @@
 
 //---------canonicals------------//
 
+ClapTrap::ClapTrap()
+{
+}
+
 ClapTrap::ClapTrap(std::string name) : name(name) 
 {
     std::cout << "constructor called" << std::endl;
