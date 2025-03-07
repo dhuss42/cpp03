@@ -11,12 +11,11 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     attack_dmg = 20;
 }
 
-// calling ClapTraps copy constructor
+// call ClapTraps copy constructor
 ScavTrap::ScavTrap(const ScavTrap& src) : ClapTrap(src)
 {
 }
 
-// calling ClapTraps assignment operator
 ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 {
     if (this != &other)
@@ -39,5 +38,6 @@ void    ScavTrap::attack(const std::string& target)
 
 void    ScavTrap::guardGate()
 {
+    std::cout << "[guardGate]" << std::endl;
     std::cout << "ScavTrap: " << name << " is now in Gate keeper mode" << std::endl;
 }

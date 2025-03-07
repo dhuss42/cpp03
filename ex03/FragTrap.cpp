@@ -1,6 +1,8 @@
 
 #include "FragTrap.hpp"
 
+//---------canonicals------------//
+
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {   
     std::cout << "FragTrap: " << name << " created!" << std::endl;

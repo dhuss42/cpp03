@@ -4,7 +4,7 @@
 
 ClapTrap::ClapTrap(std::string name) : name(name) 
 {
-    std::cout << "constructor called" << std::endl;
+    std::cout << "ClapTrap: " << name << " created!" << std::endl;
     hit_points = 10;
     nrg_points = 10;
     attack_dmg = 0;
@@ -28,7 +28,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "destructor called" << std::endl;
+    std::cout << "ClapTrap: " << name << " deleted!" << std::endl;
 }
 
 //--------actions----------//
