@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dhuss <dhuss@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/10 08:55:24 by dhuss             #+#    #+#             */
+/*   Updated: 2025/03/10 08:55:26 by dhuss            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef DIAMONDTRAP_HPP
 # define DIAMONDTRAP_HPP
 
@@ -11,16 +23,16 @@
 
 class DiamondTrap: public ScavTrap, public FragTrap
 {
-    private:
-        std::string name;
-    public:
-        DiamondTrap();
-        DiamondTrap(std::string name);
-        DiamondTrap(const DiamondTrap& src);
-        DiamondTrap& operator=(const DiamondTrap& other);
-        ~DiamondTrap();
-        void    whoAmI();
-        using   ScavTrap::attack;
+	private:
+		std::string name;
+	public:
+		DiamondTrap();
+		DiamondTrap(std::string name);
+		DiamondTrap(const DiamondTrap& src);
+		DiamondTrap& operator=(const DiamondTrap& other);
+		~DiamondTrap();
+		void	whoAmI();
+		using   ScavTrap::attack;
 };
 
 #endif
