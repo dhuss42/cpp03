@@ -6,7 +6,7 @@
 /*   By: dhuss <dhuss@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 08:55:36 by dhuss             #+#    #+#             */
-/*   Updated: 2025/03/10 09:28:02 by dhuss            ###   ########.fr       */
+/*   Updated: 2025/03/10 11:37:21 by dhuss            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ FragTrap::FragTrap()
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
-	std::cout << "FragTrap: " << name << " created!" << std::endl;
+	std::cout << "FragTrap created!" << std::endl;
 	hit_points = 100;
 	nrg_points = 100;
 	attack_dmg = 30;
@@ -29,7 +29,7 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
 
 FragTrap::FragTrap(const FragTrap& src) : ClapTrap(src)
 {
-	std::cout << "FragTrap: " << name << " created with copy constructor!" << std::endl;
+	std::cout << "FragTrap created with copy constructor!" << std::endl;
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& other)
@@ -41,7 +41,7 @@ FragTrap& FragTrap::operator=(const FragTrap& other)
 
 FragTrap::~FragTrap()
 {
-	std::cout << "FragTrap: " << name << " deleted!" << std::endl;
+	std::cout << "FragTrap deleted!" << std::endl;
 }
 
 //--------actions--------//

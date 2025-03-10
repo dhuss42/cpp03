@@ -5,10 +5,11 @@
 #include <iostream>
 
 // using inheritance and protected classes
+// protected: cannot be accessed from outside the class but in inherited class
 
 class ClapTrap
 {
-	protected: // cannot be accessed from outside the class but in inherited class
+	protected:
 		std::string name;
 		int		hit_points;
 		int		nrg_points;

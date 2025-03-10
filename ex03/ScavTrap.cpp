@@ -6,7 +6,7 @@
 /*   By: dhuss <dhuss@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 08:56:20 by dhuss             #+#    #+#             */
-/*   Updated: 2025/03/10 09:25:39 by dhuss            ###   ########.fr       */
+/*   Updated: 2025/03/10 11:36:59 by dhuss            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-	std::cout << "ScavTrap: " << name << " created!" << std::endl;
+	std::cout << "ScavTrap created!" << std::endl;
 	hit_points = 100;
 	nrg_points = 50;
 	attack_dmg = 20;
@@ -30,7 +30,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 // calling ClapTraps copy constructor
 ScavTrap::ScavTrap(const ScavTrap& src) : ClapTrap(src)
 {
-	std::cout << "ScavTrap: " << name << " created with copy constructor!" << std::endl;
+	std::cout << "ScavTrap created with copy constructor!" << std::endl;
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& other)
@@ -42,7 +42,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << "ScavTrap: " << name << " deleted!" << std::endl;
+	std::cout << "ScavTrap deleted!" << std::endl;
 }
 
 //--------actions--------//
