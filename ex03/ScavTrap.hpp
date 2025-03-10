@@ -6,7 +6,7 @@
 /*   By: dhuss <dhuss@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 08:56:34 by dhuss             #+#    #+#             */
-/*   Updated: 2025/03/10 08:56:46 by dhuss            ###   ########.fr       */
+/*   Updated: 2025/03/10 10:16:04 by dhuss            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class ScavTrap: virtual public ClapTrap
 		~ScavTrap();
 		void	attack(const std::string& target);
 		void	guardGate();
+
 };
 
 

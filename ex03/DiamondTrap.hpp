@@ -6,7 +6,7 @@
 /*   By: dhuss <dhuss@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 08:55:24 by dhuss             #+#    #+#             */
-/*   Updated: 2025/03/10 08:55:26 by dhuss            ###   ########.fr       */
+/*   Updated: 2025/03/10 11:02:01 by dhuss            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 // using keyword for specifying which intherited method of attack the DiamondTrap class is using
 
-class DiamondTrap: public ScavTrap, public FragTrap
+class DiamondTrap : public ScavTrap, public FragTrap
 {
 	private:
 		std::string name;
@@ -32,7 +32,12 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		DiamondTrap& operator=(const DiamondTrap& other);
 		~DiamondTrap();
 		void	whoAmI();
-		using   ScavTrap::attack;
+		using	ScavTrap::attack;
+		int		getHitPoints( void );
+		int		getNrgPoints( void );
+		int		getAttackDmg( void );
+		std::string	getName( void );
+		void	setNrgPoints(int amount);
 };
 
 #endif
